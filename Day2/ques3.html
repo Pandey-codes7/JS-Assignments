@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <h1 style="text-align: center;">Today's Date</h1>
+</head>
+<body>
+    <div style="text-align: center;">
+        <p id="c_date"></p>
+        <p id="sec_format"></p>
+    </div>
+    <script>
+        today =  new Date();
+        y = today.getFullYear();
+        m = today.getMonth() + 1;
+        d = today.getDate();
+        document.getElementById("c_date").innerHTML = m + "/" + d + "/" + y;
+        document.getElementById("sec_format").innerHTML = m + "-" + d + "-" + y;
+     </script>
+</body>
+</html>
